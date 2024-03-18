@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="formulario">
+        <h1>Inicio de sesion</h1>
+        <?php
+        include("conexion.php");
+        ?>
+        <form method = "post" action="Inicio.php">
+            <div class="username">
+                <input type="text" required name="usuario" placeholder = "Nombre de usuario">
+                <!-- <label>Nombre de usuario</label> -->
+            </div>
+            <div class="username">
+                <input type="password" required name="password" placeholder = "Contraseña">
+                <!-- <label>Contraseña</label> -->
+            </div>
+            <div class="recordar">¿Olvido su contraseña?</div>
+            <input type="submit" value="Iniciar" name="Inicio">
+
+        </form>
+    </div>    
+
+
+</body>
+</html>
